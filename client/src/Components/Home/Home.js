@@ -1,14 +1,16 @@
 import React from 'react'
-import HomeHeader from './HomeHeader'
+import Header from './Header'
 import HomeBanner from './HomeBanner'
 import HomeSignup from './HomeSignup'
+import BottomNav from '../Nav/BottomNav'
 
 export default function Home() {
     return (
         <div>
-            <HomeHeader/>
+            <Header title = "My Accounts"/>
             <HomeBanner/>
             <HomeSignup/>
+            <BottomNav active = "accounts"/>
         </div>
     )
 }
