@@ -1,1 +1,48 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+.home__icon {
+  color: white;
+  cursor: pointer;
+}
+
+.home__header {
+  position: absolute;
+  background-color: #CA1905;
+  height: 12.32vh;
+  width: 100%;
+}
+
+.home__header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.home__header-heading {
+  margin: 0;
+  color: white;
+  font-size: 22px;
+}
+
+.home__header-nav {
+  position: absolute;
+  left: 5%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

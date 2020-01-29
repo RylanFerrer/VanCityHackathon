@@ -1,0 +1,30 @@
+.home {
+    &__icon {
+        color: white;
+        cursor: pointer;
+    }
+    &__header {
+        position: absolute;
+        background-color: $Vancity;
+        height: 12.32vh;
+        width: 100%;
+        &-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        &-heading {
+            margin:0;
+            color:white;
+            font-size:22px;
+        }
+        &-nav {
+            position: absolute;
+            left: 5%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
