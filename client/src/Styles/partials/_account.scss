@@ -1,0 +1,44 @@
+.account {
+    padding: 0 5%;
+    &__banking {
+        &-top {
+            margin-top: 0;
+        }
+        &-bottom {
+            margin-bottom: 0;
+        }
+        border-top: 0.8px solid black;
+        border-bottom: 0.8px solid black;
+        padding: 16px 0 ;
+        &-text {
+            color: $Vancity;
+            margin: 0;
+        }
+        &-textnum {
+            margin: 0;
+        }
+        &-chequings {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__graph {
+        &-container {
+            padding-top: 8%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.bottom {
+    margin-top: 15px;
+}
+.money__container {
+    display: flex;
+    align-items: flex-start;
+}
+.money__text {
+    padding-top: 5px;
+    margin: 0;
+}
