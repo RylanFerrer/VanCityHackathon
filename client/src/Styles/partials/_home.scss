@@ -3,6 +3,43 @@
         color: white;
         cursor: pointer;
     }
+    &__signup {
+        height: 19.45vh;
+        background-color: $Vancity;
+        width: 100%;
+        &-button {
+            width: 42%;
+            border:none;
+            height: 29px;
+            border-radius: 10px;
+            font-size: 16px;
+            &-container {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            &-create {
+                color: $Vancity;
+                background-color: white;
+            }
+            &-learn {
+                background-color: $Grey;
+                color: white;
+            }
+        }
+
+        &-text {
+            color:white;
+            font-size: 16px;
+            font-weight: normal;
+            &-container {
+                justify-content: center;
+                align-items: center;
+                height: 70%;
+                display: flex;
+                margin-left: 5%;
+            }
+        }
+    }
     &__banner {
         margin: 0 3%;
         display: flex;

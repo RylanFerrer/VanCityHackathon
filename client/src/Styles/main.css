@@ -4,6 +4,59 @@
   cursor: pointer;
 }
 
+.home__signup {
+  height: 19.45vh;
+  background-color: #CA1905;
+  width: 100%;
+}
+
+.home__signup-button {
+  width: 42%;
+  border: none;
+  height: 29px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.home__signup-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.home__signup-button-create {
+  color: #CA1905;
+  background-color: white;
+}
+
+.home__signup-button-learn {
+  background-color: #807E7E;
+  color: white;
+}
+
+.home__signup-text {
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.home__signup-text-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5%;
+}
+
 .home__banner {
   margin: 0 3%;
   display: -webkit-box;
