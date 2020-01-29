@@ -3,8 +3,17 @@
         color: white;
         cursor: pointer;
     }
+    &__banner {
+        margin: 0 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-icon {
+            margin-right: 4%;
+        }
+    }
     &__header {
-        position: absolute;
+        position: relative;
         background-color: $Vancity;
         height: 12.32vh;
         width: 100%;

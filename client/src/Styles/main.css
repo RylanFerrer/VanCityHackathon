@@ -4,8 +4,25 @@
   cursor: pointer;
 }
 
+.home__banner {
+  margin: 0 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home__banner-icon {
+  margin-right: 4%;
+}
+
 .home__header {
-  position: absolute;
+  position: relative;
   background-color: #CA1905;
   height: 12.32vh;
   width: 100%;
