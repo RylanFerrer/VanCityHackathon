@@ -1,4 +1,71 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+.account {
+  padding: 0 5%;
+}
+
+.account__banking {
+  border-top: 0.8px solid black;
+  border-bottom: 0.8px solid black;
+  padding: 16px 0;
+}
+
+.account__banking-top {
+  margin-top: 0;
+}
+
+.account__banking-bottom {
+  margin-bottom: 0;
+}
+
+.account__banking-text {
+  color: #CA1905;
+  margin: 0;
+}
+
+.account__banking-textnum {
+  margin: 0;
+}
+
+.account__banking-chequings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.account__graph-container {
+  padding-top: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom {
+  margin-top: 15px;
+}
+
+.money__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.money__text {
+  padding-top: 5px;
+  margin: 0;
+}
+
 .home__icon {
   color: white;
   cursor: pointer;
@@ -145,6 +212,7 @@
 }
 
 .nav__item-image {
+  cursor: pointer;
   height: 28px;
   width: 28px;
   margin-bottom: 5px;

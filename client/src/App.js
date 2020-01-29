@@ -1,11 +1,10 @@
 import React from 'react';
 import './Styles/main.css'
-import Home from './Components/Home/Home'
-import BottomNav from "./Components/Nav/BottomNav"
+import AccountPage from './Components/Accounts/AccountPage'
 function App() {
   return (
     <div >
-      <Home/>
+      <AccountPage/>
     </div>
   );
 }
