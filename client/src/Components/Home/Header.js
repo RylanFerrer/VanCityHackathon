@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function HomeHeader() {
+export default function Header() {
     return (
             <div className = "home__header">
                 <div className = "home__header-nav">
