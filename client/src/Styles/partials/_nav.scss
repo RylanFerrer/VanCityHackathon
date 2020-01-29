@@ -1,10 +1,11 @@
 .nav {
     display: flex;
+    background-color: white;
     justify-content: space-evenly;
     border-top: solid black 0.8px;
     padding-top: 10px;
     padding-bottom: 15px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     &__item {
