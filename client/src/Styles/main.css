@@ -183,13 +183,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: white;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   border-top: solid black 0.8px;
   padding-top: 10px;
   padding-bottom: 15px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
