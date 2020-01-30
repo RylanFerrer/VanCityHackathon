@@ -239,6 +239,37 @@
   font-size: 12px;
 }
 
+.roundup {
+  padding: 0 20px;
+}
+
+.roundup-text {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.roundup-one {
+  margin-right: 10px;
+}
+
+.roundup__button {
+  border: none;
+  width: 43vw;
+  height: 32px;
+  border-radius: 8px;
+  color: white;
+  background-color: #807E7E;
+  outline: none;
+}
+
+.roundup__button-red {
+  background-color: red;
+}
+
+.roundup-heading {
+  font-size: 16px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }

@@ -1,0 +1,25 @@
+.roundup {
+    padding: 0 20px;
+    &-text {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    &-one {
+        margin-right: 10px;
+    }
+    &__button {
+        border: none;
+        width: 43vw;
+        height: 32px;
+        border-radius: 8px;
+        color: white;
+        background-color: #807E7E;
+        outline: none;
+        &-red {
+            background-color: red;
+        }
+    }
+    &-heading {
+        font-size: 16px;
+    }
+}
