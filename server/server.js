@@ -1,8 +1,10 @@
 const express = require('express')
-const cors = require('cors')
 const app = express()
+const cookieParser = require('cookie-parser')
 const data = require('./Models/dataset.json')
 const PORT = process.env.PORT || 5000
+app.use(express.json())
+app.use(cookieParser())
 app.get('/', (req,res) => {
     res.send("VanCity Hack")
     let cat = {
@@ -29,6 +31,7 @@ app.get('/', (req,res) => {
 
 })
 app.use('/api/user', require('./Routes/Api/users'))
+app.use('/api/auth', require('./Routes/Api/auth'))
 app.listen(PORT, (req,res) => {
     console.log(`Server is running on port ${PORT}`)
 })
