@@ -1,5 +1,4 @@
 import React from 'react';
-
 const AccountInfoConfirmed = () => {
     return (
         <div className = "account">
@@ -29,7 +28,7 @@ const AccountInfoConfirmed = () => {
                     <h4 className = "account__banking-textnum">4935438472934</h4>
                 </div>
                 <div className = "money__container">
-                    <h4 className = "money__text">$5.00</h4>
+                    <h4 className = "money__text">$34.55</h4>
                 </div>
             </div>
         </div>

@@ -43,9 +43,12 @@ const ConfirmPage = (props) => {
                 <h3 className = "confirm__settings-text">{RoundUp(Round)}</h3>
                 <h3 className = "confirm__settings-heading">Categories</h3>
                 <h3 className = "confirm__settings-text">{cats.map(cat => {return `${cat}  `})}</h3>
-                <button onClick = {() => confirm()} className = "confirm__button btn">Confirm</button>
-                <button  onClick = {() => setEditRedirect(true)}className = "confirm__button white-btn" >Edit</button>
-                <button onClick = {() => setRedirect(true)} className = "confirm__button white-btn">Cancel</button>
+                <div className = "confirm__container">
+                    <button onClick = {() => confirm()} className = "confirm__button btn">Confirm</button>
+                    <button  onClick = {() => setEditRedirect(true)}className = "confirm__button white-btn" >Edit</button>
+                    <button onClick = {() => setRedirect(true)} className = "confirm__button white-btn">Cancel</button>
+                </div>
+             
             </div>
             <BottomNav/>
         </div>

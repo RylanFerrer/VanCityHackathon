@@ -7,10 +7,19 @@
 @import "./partials/confirm";
 @import "./partials/graph";
 @import "./partials/rewards";
+@import "./partials/spending";
 
 body {
+    background-color: #f9f9f9;
     font-family: 'Roboto', sans-serif;
 }
-.center {
-    text-align: center;
+
+canvas {
+    margin: 0 auto;
+}
+.canvasjs-chart-canvas {
+    left: 5%;
+}
+.canvasjs-chart-credit {
+    display: none;
 }

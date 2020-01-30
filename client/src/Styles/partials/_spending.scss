@@ -1,0 +1,22 @@
+.spending {
+    margin: 0 20px;
+    &__top {
+        margin-top: 24px;
+        margin-bottom: 41px;
+    }
+    &__text {
+        font-size: 16px;
+        text-align: center;
+    }
+    &__img-container {
+        display: flex;
+        justify-content: center;
+        &-bot {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        &-tag {
+            margin-bottom: 30%;
+        }
+    }
+}

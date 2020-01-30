@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios'
+import React from 'react'
 import Header from '../Home/Header'
 import BottomNav from '../Nav/BottomNav'
 import ConfirmedGraphs from './ConfirmedGraphs'
