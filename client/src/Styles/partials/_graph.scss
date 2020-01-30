@@ -1,0 +1,20 @@
+.graph {
+    margin: 0 20px;
+    &__text {
+        font-size: 14px;
+        font-weight: medium;
+    }
+    &__reward {
+        &-text {
+            font-size: 12px;
+            color:$Vancity;
+            text-align: center;
+        }
+    }
+    &__date {
+        font-size: 12px;
+        font-weight: normal;
+        margin: 0;
+        text-align: center;
+    }
+}

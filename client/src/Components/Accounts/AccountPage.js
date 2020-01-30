@@ -5,6 +5,8 @@ import HomeBanner from '../Home/HomeBanner'
 import HomeSignup from '../Home/HomeSignup'
 import BottomNav from '../Nav/BottomNav'
 import AccountInfo from './AccountInfo'
+import AccoutnPage from './AccountPageConfirmed'
+import AccountPageConfirmed from './AccountPageConfirmed'
 export default function Account() {
     const [user,setUser] = useState(undefined)
     useEffect(() => {
@@ -29,5 +31,6 @@ export default function Account() {
             <BottomNav active = "accounts"/>
         </div>
     )
-    } return <h1>Loading</h1>
+    } else if (user && user.hasPortfolio){ return <AccountPageConfirmed/>}
+     return <h1>Loading</h1>
 }

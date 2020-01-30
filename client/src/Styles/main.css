@@ -19,11 +19,11 @@
 
 .account__banking-text {
   color: #CA1905;
-  margin: 0;
+  margin: 12px 0 0 0;
 }
 
 .account__banking-textnum {
-  margin: 0;
+  margin: 0 0 12px 0;
 }
 
 .account__banking-chequings {
@@ -36,7 +36,7 @@
 }
 
 .account__graph-container {
-  padding-top: 8%;
+  padding-top: 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,13 +56,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .money__text {
-  padding-top: 5px;
+  padding-bottom: 22px;
   margin: 0;
 }
 
@@ -365,6 +365,70 @@
 
 .end {
   margin-left: 0;
+}
+
+.confirm {
+  padding: 0 20px;
+}
+
+.confirm__button {
+  font-size: 18px;
+  border: none;
+  height: 48px;
+  width: 335px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.confirm__heading {
+  font-size: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid black;
+}
+
+.confirm__settings-heading {
+  margin: 32px 0 8px 0;
+  color: #CA1905;
+  font-size: 16px;
+}
+
+.confirm__settings-text {
+  font-size: 14px;
+  margin: 8px 0 27px 0;
+}
+
+.white-btn {
+  border: 2px solid #CA1905;
+  color: #CA1905;
+  background-color: white;
+}
+
+.btn {
+  margin-top: 64px;
+  background-color: #CA1905;
+  color: white;
+}
+
+.graph {
+  margin: 0 20px;
+}
+
+.graph__text {
+  font-size: 14px;
+  font-weight: medium;
+}
+
+.graph__reward-text {
+  font-size: 12px;
+  color: #CA1905;
+  text-align: center;
+}
+
+.graph__date {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
 }
 
 body {

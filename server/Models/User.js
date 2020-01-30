@@ -1,4 +1,4 @@
-const User = {
+let User = {
     FirstName: 'Samantha',
     LastName: 'Hanesworth', 
     hasPortfolio: false,
