@@ -11,6 +11,7 @@
         &-container {
             display: flex;
             justify-content: center;
+            margin-bottom: 28%;
         }
         &-button {
             font-size: 18px;
@@ -39,17 +40,17 @@
                 background-color: red;
                 color: white;
             }
-            padding: 0 8px;
+            padding: 0 12px;
             outline: none;
             font-size: 14px;
             background-color: white;
             color: black;
             height: 32px;
-            max-width: 130px;
+            max-width: 135px;
             border:none;
             border-radius: 10px;
             border: solid 2px $Vancity;
-            margin: 8px 12px;
+            margin: 4px 4px;
             
         }
         &-container {
@@ -105,3 +106,6 @@
 }
 
 .end {margin-left: 0;}
+.radio {
+    margin-left: 41px;
+}

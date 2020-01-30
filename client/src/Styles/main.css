@@ -6,7 +6,6 @@
 .account__banking {
   border-top: 0.8px solid black;
   border-bottom: 0.8px solid black;
-  padding: 16px 0;
 }
 
 .account__banking-top {
@@ -259,6 +258,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 28%;
 }
 
 .roundup__save-button {
@@ -284,17 +284,17 @@
 }
 
 .roundup__categories-button {
-  padding: 0 8px;
+  padding: 0 12px;
   outline: none;
   font-size: 14px;
   background-color: white;
   color: black;
   height: 32px;
-  max-width: 130px;
+  max-width: 135px;
   border: none;
   border-radius: 10px;
   border: solid 2px #CA1905;
-  margin: 8px 12px;
+  margin: 4px 4px;
 }
 
 .roundup__categories-button-selected {
@@ -365,6 +365,10 @@
 
 .end {
   margin-left: 0;
+}
+
+.radio {
+  margin-left: 41px;
 }
 
 .confirm {

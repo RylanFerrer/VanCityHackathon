@@ -49,6 +49,11 @@ export default function RoundUpPage(props) {
                     <button  onClick = {() => setEnabled(false)}  className = {`roundup__button ${!enabled ? 'roundup__button-red': ''}`}>Disabled</button>
                 </div>
             <h3 className = "roundup-heading">Round up Amount</h3>
+                <div onChange={(event) => setAccount(event.target.value)}>
+                <input type="radio" value="Savings" name="account"/> Savings
+                <input className = "radio" type="radio" value="Chequings" name="account"/> Chequings
+            </div>
+            <h3 className = "roundup-heading">Round up Amount</h3>
             <div>
                 <button  onClick = {() => roundCalculator(1) } className = {`roundup__amount-button ${option === 1 ? 'roundup__button-red' :'' }`}>Round To Next Dollar</button>
                 <button onClick = {() => roundCalculator(2) } className = {`roundup__amount-button ${option === 2 ? 'roundup__button-red' : ''}`}>Next Dollar Plus $1</button>
