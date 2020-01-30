@@ -418,10 +418,21 @@
   font-weight: medium;
 }
 
+.graph__reward-container {
+  margin-top: 16.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .graph__reward-text {
   font-size: 12px;
   color: #CA1905;
   text-align: center;
+  text-decoration: none;
 }
 
 .graph__date {
@@ -429,6 +440,69 @@
   font-weight: normal;
   margin: 0;
   text-align: center;
+}
+
+.rewards {
+  margin: 0 20px;
+}
+
+.rewards__text {
+  font-size: 16px;
+}
+
+.rewards__info {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.rewards__info-bold {
+  font-weight: bold;
+}
+
+.rewards__item {
+  background-color: #FCEEEE;
+  width: 335px;
+  height: 100px;
+  border-radius: 8px;
+  margin: 16px 0;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.rewards__item-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
+}
+
+.rewards__item-title {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.rewards__item-description {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.rewards__item-img {
+  margin-top: 7px;
+  float: left;
+  margin-left: 8px;
+  margin-right: 16px;
+  height: 85px;
+  width: 85px;
+  background-color: red;
+  border-radius: 4px;
 }
 
 body {
