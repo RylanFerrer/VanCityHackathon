@@ -1,10 +1,25 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import axios from 'axios'
 import Header from '../Home/Header'
 import HomeBanner from '../Home/HomeBanner'
 import HomeSignup from '../Home/HomeSignup'
 import BottomNav from '../Nav/BottomNav'
 import AccountInfo from './AccountInfo'
 export default function Account() {
+    const [user,setUser] = useState(undefined)
+    useEffect(() => {
+        const fetchData = async() => {
+            try {
+            const userData = await axios.get('/api/user')
+            setUser(userData.data)
+            } catch(e) {
+                console.log(e)
+            }
+        }
+        fetchData()
+    }, [])
+    if(user && !user.hasPortfolio)
+    {
     return (
         <div>
             <Header title = "My Accounts"/>
@@ -14,4 +29,5 @@ export default function Account() {
             <BottomNav active = "accounts"/>
         </div>
     )
+    } return <h1>Loading</h1>
 }
