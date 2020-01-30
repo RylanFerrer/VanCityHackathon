@@ -7,6 +7,53 @@
     &-one {
         margin-right: 10px;
     }
+    &__categories {
+      
+        &-button {
+            font-size: 14px;
+            background-color: white;
+            height: 32px;
+            max-width: 120px;
+            border:none;
+            border-radius: 8px;
+            border: solid 2px $Vancity;
+            margin: 8px 12px;
+            
+        }
+        &-container {
+            margin: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    &__amount {
+        &-input {
+            margin-top: 16px;
+            border: 2px solid $Grey;
+            width: 104px;
+            height: 35px;
+            text-indent: 20px;
+            outline: none;
+            border-radius: 10px;
+            &-container {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        &-button{
+            outline: none;
+            border: none;
+            width: 104px;
+            height:62px;
+            background-color: white;
+            border:2px solid $Vancity;
+            border-radius: 10px;
+            color: black;
+            margin-right:  6px;
+            box-sizing: border-box;
+        }
+      
+    }
     &__button {
         border: none;
         width: 43vw;
@@ -17,9 +64,12 @@
         outline: none;
         &-red {
             background-color: red;
+            color: white;
         }
     }
     &-heading {
         font-size: 16px;
     }
 }
+
+.end {margin-left: 0;}
