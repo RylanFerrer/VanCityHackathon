@@ -37,7 +37,7 @@
       
         &-button {
             &-selected {
-                background-color: red;
+                background-color: $Vancity;
                 color: white;
             }
             padding: 0 12px;
@@ -92,11 +92,12 @@
         width: 43vw;
         height: 32px;
         border-radius: 8px;
-        color: white;
-        background-color: #807E7E;
+        color: $Vancity;
+        background-color: #fff;
+        border: 2px solid $Vancity;
         outline: none;
         &-red {
-            background-color: red;
+            background-color: $Vancity;
             color: white;
         }
     }

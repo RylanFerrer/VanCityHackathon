@@ -1,4 +1,7 @@
 .confirm {
+    &__container {
+        padding-bottom: 15%;
+    }
     &__button {
         font-size: 18px;
         border:none;
@@ -31,7 +34,7 @@
     background-color: white;
 }
 .btn {
-    margin-top: 64px;
+    margin-top: 48px;
     background-color: $Vancity;
     color: white;
 

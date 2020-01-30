@@ -9,7 +9,7 @@ export default function HomeSignup() {
             <div className = "home__signup-button-container">
 
                 <Link className = "home__signup-button home__signup-button-create"to = "/create">Create Portfolio</Link> 
-                <button className = "home__signup-button home__signup-button-learn">Learn</button>
+                <button className = "home__signup-button home__signup-button-learn">Learn More</button>
             </div>
           
         </div>

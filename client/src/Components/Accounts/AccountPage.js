@@ -5,7 +5,6 @@ import HomeBanner from '../Home/HomeBanner'
 import HomeSignup from '../Home/HomeSignup'
 import BottomNav from '../Nav/BottomNav'
 import AccountInfo from './AccountInfo'
-import AccoutnPage from './AccountPageConfirmed'
 import AccountPageConfirmed from './AccountPageConfirmed'
 export default function Account() {
     const [user,setUser] = useState(undefined)

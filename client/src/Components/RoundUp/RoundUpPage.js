@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
-import Header from '../Home/Header'
 import {Redirect} from 'react-router-dom'
+import Header from '../Home/Header'
 import BottomNav from '../Nav/BottomNav'
 export default function RoundUpPage(props) {
     let prices = {Groceries: 23.00, Utilities:15.25,HealthFitness: 19.00, Shopping: 19.00, FoodDrink: 38.00, Travel: 45.00 }
-    const [enabled, setEnabled] = useState(false)
-    const [account, setAccount] = useState('Savings')
+    const [enabled, setEnabled] = useState(true)
+    const [account, setAccount] = useState('Chequings')
     const [roundAmount, setRoundAmount] = useState(0.35)
     const [option, setOption] = useState(1);
     const [categories, setCategories] = useState([])
@@ -43,15 +43,16 @@ export default function RoundUpPage(props) {
             <Header title = "Round Up Portfolio"/>
             <div className = "roundup">
             <h3 className = "roundup-text">Kickstart your savings with Vancity’s Round-Up Program. Round your purchases to the nearest dollar and deposit the difference into your investment account. Customize the amount and purchase category to round up.</h3>
-                <h2 className = "roundup-heading">Round up portfolio</h2>
+                <h2 className = "roundup-heading">Select Account</h2>
                 <div className = "roundup__button-container">
                     <button onClick = {() => setEnabled(true)} className = {` roundup-one roundup__button ${enabled ? 'roundup__button-red': ''}`}>Active</button>
                     <button  onClick = {() => setEnabled(false)}  className = {`roundup__button ${!enabled ? 'roundup__button-red': ''}`}>Disabled</button>
                 </div>
-            <h3 className = "roundup-heading">Round up Amount</h3>
+            <h3 className = "roundup-heading">Round up Portfolio</h3>
                 <div onChange={(event) => setAccount(event.target.value)}>
-                <input type="radio" value="Savings" name="account"/> Savings
-                <input className = "radio" type="radio" value="Chequings" name="account"/> Chequings
+                <input  type="radio" value="Chequing" name="account"/> Chequing
+                <input className = "radio" type="radio" value="Savings" name="account"/> Savings
+              
             </div>
             <h3 className = "roundup-heading">Round up Amount</h3>
             <div>
@@ -60,7 +61,7 @@ export default function RoundUpPage(props) {
                 <button onClick = {() => roundCalculator(3) } className = {`roundup__amount-button ${option === 3 ? 'roundup__button-red' : ''}`}>Custom Amount</button>
             </div>
             <div className = "roundup__amount-input-container">
-                <input style = {{display: `${option !== 3 ? 'none': 'block'}`}} onChange = {event => setRoundAmount(event.target.value)} type="number"  className = "roundup__amount-input"></input>
+                <input style = {{display: `${option !== 3 ? 'none': 'block'}`}} onChange = {event => event.target.value === '' || event.target.value === 0 ? 0.35 : setRoundAmount(parseFloat(event.target.value) + 0.35)  } type="number"  className = "roundup__amount-input"></input>
             </div>
             <h4 className = "roundup-text center">{`For a purchase of $1.65 you will invest $ ${roundAmount}`}</h4>
             <h3 className = "roundup-heading">Select Round up Categories</h3>

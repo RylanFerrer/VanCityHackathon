@@ -26,7 +26,8 @@
                 background-color: white;
             }
             &-learn {
-                background-color: $Grey;
+                background-color: $Vancity;
+                border: solid #fff 1px;
                 color: white;
             }
         }
@@ -77,4 +78,8 @@
             align-items: center;
         }
     }
+}
+.a {
+    height: 186px;
+    width: 335px;
 }
