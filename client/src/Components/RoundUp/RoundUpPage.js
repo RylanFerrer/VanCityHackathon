@@ -1,13 +1,16 @@
 import React, {useState} from 'react'
 import Header from '../Home/Header'
+import {Redirect} from 'react-router-dom'
 import BottomNav from '../Nav/BottomNav'
 export default function RoundUpPage(props) {
     let prices = {Groceries: 23.00, Utilities:15.25,HealthFitness: 19.00, Shopping: 19.00, FoodDrink: 38.00, Travel: 45.00 }
     const [enabled, setEnabled] = useState(false)
+    const [account, setAccount] = useState('Savings')
     const [roundAmount, setRoundAmount] = useState(0.35)
     const [option, setOption] = useState(1);
     const [categories, setCategories] = useState([])
     const [savedMoney, setSavedMoney] = useState(0)
+    const [redirect, setRedirect] = useState(false)
     const roundCalculator = (opt) => {
         if (opt === 1)
         {
@@ -27,6 +30,13 @@ export default function RoundUpPage(props) {
             setCategories([...categories, category])
             setSavedMoney( savedMoney + prices[newOption])
         }
+    }
+    if (redirect) 
+    {
+        return <Redirect to={{
+            pathname: '/confirm',
+            state: { Status: enabled, Account: account, Round: option, cats: categories }
+        }}/>
     }
     return (
         <div>
@@ -62,7 +72,7 @@ export default function RoundUpPage(props) {
             <h3 className = "roundup__savings-heading">Based on last months spending you would have invested</h3>
             <h1 className = "roundup__savings">${savedMoney}</h1>
             <div className = "roundup__save-container">
-                <button className = "roundup__save-button">Save</button>
+                <button onClick = {() => setRedirect(true)}className = "roundup__save-button">Save</button>
             </div>
      
             <BottomNav/>
