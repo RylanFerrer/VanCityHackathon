@@ -7,15 +7,47 @@
     &-one {
         margin-right: 10px;
     }
+    &__save {
+        &-container {
+            display: flex;
+            justify-content: center;
+        }
+        &-button {
+            font-size: 18px;
+            background-color: $Vancity;
+            color: white;
+            width: 335px;
+            height: 48px;
+            border: none;
+            border-radius: 8px;
+            text-align: center;
+            outline: none;
+        }
+    }
+    &__savings {
+        text-align: center;
+        font-size: 24px;
+        &-heading {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
     &__categories {
       
         &-button {
+            &-selected {
+                background-color: red;
+                color: white;
+            }
+            padding: 0 8px;
+            outline: none;
             font-size: 14px;
             background-color: white;
+            color: black;
             height: 32px;
-            max-width: 120px;
+            max-width: 130px;
             border:none;
-            border-radius: 8px;
+            border-radius: 10px;
             border: solid 2px $Vancity;
             margin: 8px 12px;
             

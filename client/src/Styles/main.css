@@ -252,15 +252,54 @@
   margin-right: 10px;
 }
 
-.roundup__categories-button {
-  font-size: 14px;
-  background-color: white;
-  height: 32px;
-  max-width: 120px;
+.roundup__save-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.roundup__save-button {
+  font-size: 18px;
+  background-color: #CA1905;
+  color: white;
+  width: 335px;
+  height: 48px;
   border: none;
   border-radius: 8px;
+  text-align: center;
+  outline: none;
+}
+
+.roundup__savings {
+  text-align: center;
+  font-size: 24px;
+}
+
+.roundup__savings-heading {
+  font-size: 12px;
+  text-align: center;
+}
+
+.roundup__categories-button {
+  padding: 0 8px;
+  outline: none;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+  height: 32px;
+  max-width: 130px;
+  border: none;
+  border-radius: 10px;
   border: solid 2px #CA1905;
   margin: 8px 12px;
+}
+
+.roundup__categories-button-selected {
+  background-color: red;
+  color: white;
 }
 
 .roundup__categories-container {

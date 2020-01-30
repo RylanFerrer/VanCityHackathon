@@ -1,11 +1,13 @@
 import React, {useState} from 'react'
 import Header from '../Home/Header'
 import BottomNav from '../Nav/BottomNav'
-export default function RoundUpPage() {
+export default function RoundUpPage(props) {
+    let prices = {Groceries: 23.00, Utilities:15.25,HealthFitness: 19.00, Shopping: 19.00, FoodDrink: 38.00, Travel: 45.00 }
     const [enabled, setEnabled] = useState(false)
     const [roundAmount, setRoundAmount] = useState(0.35)
     const [option, setOption] = useState(1);
     const [categories, setCategories] = useState([])
+    const [savedMoney, setSavedMoney] = useState(0)
     const roundCalculator = (opt) => {
         if (opt === 1)
         {
@@ -14,6 +16,17 @@ export default function RoundUpPage() {
             setRoundAmount(1.35)
         } 
         setOption(opt)
+    }
+    const addSelectedCategories = (category) => {
+        let newOption = category === 'Health & Fitness' ? 'HealthFitness' : category === 'Food & Drink' ?  'FoodDrink' : category
+        //Check if category is already selected
+        if(categories.includes(category)) {
+            setCategories(categories.filter((cat) => cat !== category))
+            setSavedMoney(savedMoney - prices[newOption] )
+        } else {
+            setCategories([...categories, category])
+            setSavedMoney( savedMoney + prices[newOption])
+        }
     }
     return (
         <div>
@@ -39,13 +52,18 @@ export default function RoundUpPage() {
               
             </div>
             <div className = "roundup__categories-container">
-            <button className = {`roundup__categories-button end`}>Groceries</button>
-            <button className = {`roundup__categories-button`}>Utilities</button>
-            <button className = {`roundup__categories-button`}>Health & Fitness</button>
-            <button className = {`roundup__categories-button end`}>Shopping</button>
-            <button className = {`roundup__categories-button`}>Food & Drink</button>
-            <button className = {`roundup__categories-button`}>Travel</button>
-        </div>
+                <button onClick = {() => addSelectedCategories('Groceries')}className = {`roundup__categories-button end ${categories.includes('Groceries') ? 'roundup__categories-button-selected' : ''}`}>Groceries</button>
+                <button onClick = {() => addSelectedCategories('Utilities')} className = {`roundup__categories-button  ${categories.includes('Utilities') ? 'roundup__categories-button-selected' : ''} `}>Utilities</button>
+                <button onClick = {() => addSelectedCategories('Health & Fitness')} className = {`roundup__categories-button  ${categories.includes('Health & Fitness') ? 'roundup__categories-button-selected' : ''}`}>Health & Fitness</button>
+                <button onClick = {() => addSelectedCategories('Shopping')} className = {`roundup__categories-button end  ${categories.includes('Shopping') ? 'roundup__categories-button-selected' : ''}`}>Shopping</button>
+                <button onClick = {() => addSelectedCategories('Food & Drink')} className = {`roundup__categories-button  ${categories.includes('Food & Drink') ? 'roundup__categories-button-selected' : ''}`}>Food & Drink</button>
+                <button onClick = {() => addSelectedCategories('Travel')} className = {`roundup__categories-button  ${categories.includes('Travel') ? 'roundup__categories-button-selected' : ''}`}>Travel</button>
+            </div>
+            <h3 className = "roundup__savings-heading">Based on last months spending you would have invested</h3>
+            <h1 className = "roundup__savings">${savedMoney}</h1>
+            <div className = "roundup__save-container">
+                <button className = "roundup__save-button">Save</button>
+            </div>
      
             <BottomNav/>
         </div>
